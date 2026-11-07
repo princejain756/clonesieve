@@ -1,0 +1,37 @@
+{
+  "name": "clonesieve",
+  "version": "0.1.0",
+  "description": "Detect coding-agent helper re-implementation, Type-2/Type-3 function clones, zero-caller dead exports, and blind write-before-search habits across JS/TS/Python codebases and Claude Code / Codex transcripts.",
+  "type": "module",
+  "bin": {
+    "clonesieve": "bin/clonesieve.mjs"
+  },
+  "main": "src/analyzer.mjs",
+  "files": [
+    "bin/",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test tests/clonesieve.test.mjs",
+    "demo": "node ./bin/clonesieve.mjs --demo"
+  },
+  "keywords": [
+    "claude-code",
+    "codex",
+    "code-clones",
+    "duplicate-code",
+    "dead-code",
+    "unused-exports",
+    "ai-slop",
+    "static-analysis",
+    "agent-infra",
+    "cli"
+  ],
+  "author": "Prince Jain <princejain756@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
